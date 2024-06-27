@@ -2,7 +2,7 @@ package step1;
 
 import java.util.Scanner;
 
-public class Question2 {
+public class Question10 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
@@ -10,6 +10,9 @@ public class Question2 {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		
-		System.out.println(a+b);
+		System.out.println(b%10 * a);
+		System.out.println((b%100)/10 * a);
+		System.out.println(b/100 * a);
+		System.out.println(b * a);
 	}
 }

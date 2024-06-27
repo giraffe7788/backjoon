@@ -2,14 +2,11 @@ package step1;
 
 import java.util.Scanner;
 
-public class Question2 {
+public class Question7 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		
-		int a = sc.nextInt();
-		int b = sc.nextInt();
-		
-		System.out.println(a+b);
+		String input = sc.nextLine();
+		System.out.println(input + "??!");
 	}
 }
