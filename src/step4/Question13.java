@@ -21,6 +21,7 @@ public class Question13 {
 				int currentNum = Integer.parseInt(st.nextToken());
 				if(currentNum < num) bw.write(currentNum + " ");
 			}
+			
 			bw.flush();
 			
 		} catch(Exception e) {
