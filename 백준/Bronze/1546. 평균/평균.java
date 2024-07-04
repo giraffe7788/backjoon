@@ -12,20 +12,17 @@ public class Main {
 			int repeat = Integer.parseInt(br.readLine());
 			int[] scoreArr = new int[repeat];
 			int max = Integer.MIN_VALUE;
+			double sum = 0;
 			
 			StringTokenizer st = new StringTokenizer(br.readLine());
 			for(int i = 0; i < repeat; i++) {
 				int score = Integer.parseInt(st.nextToken());
 				scoreArr[i] = score;
+				sum += score;
 				if(max < score) max = score;
 			}
 			
-			double sum = 0;
-			for(int i = 0; i < repeat; i++) {
-				sum += (double)scoreArr[i] / max * 100;
-			}
-			
-			bw.write((double)sum/repeat + "");
+			bw.write((sum / max * 100) / repeat + "");
 			bw.flush();
 			
 		} catch(Exception e) {
