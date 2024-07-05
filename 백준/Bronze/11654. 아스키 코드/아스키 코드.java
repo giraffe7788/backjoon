@@ -8,9 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		try(BufferedReader br = new BufferedReader(new InputStreamReader(System.in))){
 			
-			String i = br.readLine();
-			char c = i.charAt(0);
-			System.out.println((int)c);
+			System.out.println((int)br.readLine().charAt(0));
 			
 		} catch(Exception e) {
 			e.printStackTrace();
